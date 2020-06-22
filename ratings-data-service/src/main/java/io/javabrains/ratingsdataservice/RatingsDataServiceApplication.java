@@ -10,6 +10,7 @@ public class RatingsDataServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RatingsDataServiceApplication.class, args);
+		System.out.println("==== rating service is running ===== ");
 	}
 
 }
