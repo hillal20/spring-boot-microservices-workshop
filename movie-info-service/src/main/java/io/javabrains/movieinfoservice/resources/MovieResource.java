@@ -23,6 +23,10 @@ public class MovieResource {
     @Value("${api.key}")
     private String apiKey;
 
+    @Value("${message}")
+    private String message;
+
+
     @Autowired
     private RestTemplate restTemplate;
 
@@ -37,8 +41,8 @@ public class MovieResource {
     // this is for environment object
     @GetMapping("/environment")
     public String envInfo(){
-
-        return "env info ==> :" +  environment.toString();
+        System.out.println(" message ===> "+ message );
+        return "env info ==> :" +  environment.toString() +" APIKEY" +  apiKey ;
     }
 
 
