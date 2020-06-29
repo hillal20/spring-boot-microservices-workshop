@@ -37,6 +37,11 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 <!--        to launch the spring cloud client -->
 		<dependency>
 		   <groupId>org.springframework.cloud</groupId>
